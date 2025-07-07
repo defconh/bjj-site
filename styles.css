@@ -14,6 +14,7 @@ body{
     padding: 1rem;
 }
 
+/*---header---*/
 header{
     background-color: #111;
     display: flex;
@@ -26,16 +27,27 @@ header h1{
     color: #e53935;
     font-size: 1.5rem;
 }
+/*-------------*/
 
-nav{
-    list-style: none;
+/*---navbar---*/
+.nav{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 nav ul {
     color: #fff;
+    list-style: none;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li{
+    padding: 0.5rem;
+
 }
 
 nav a{
@@ -43,21 +55,21 @@ nav a{
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    font-size: 1.15rem;
 }
 
-nav a:hover{
+nav a:hover, .active{
     color: #e53935;
 }
+/*-------------*/
 
 main{
     padding: 2rem 0;
     flex: 1;
 }
 
-.topbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.column-wrapper{
+
 }
 
 footer{
